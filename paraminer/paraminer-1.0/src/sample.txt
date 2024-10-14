@@ -1,0 +1,6 @@
+running with 1 thread(s).
+nb_attributes 1
+1000
+PARAMINER DEBUG
+ 1+ (1000)
+1 patterns mined

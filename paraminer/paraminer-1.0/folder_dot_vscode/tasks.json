@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ générer le fichier actif",
+            "command": "g++ -DHAVE_CONFIG_H -I. -I..  -I./../melinda/  -DNDEBUG     -O3 -MT paraminer_local_graduals.o -MD -MP -MF .deps/paraminer_local_graduals.Tpo -c -o paraminer_local_graduals.o paraminer_local_graduals.cpp;mv -f .deps/paraminer_local_graduals.Tpo .deps/paraminer_local_graduals.Po;g++  -O3  -o ${fileDirname}/${fileBasenameNoExtension} paraminer_local_graduals.o paraminer.o element.o database.o pattern.o utils.o ../melinda/libmelinda.a -lpthread -lpthread",
+            "args": [
+                
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tâche générée par le débogueur."
+        }
+    ],
+    "version": "2.0.0"
+}
